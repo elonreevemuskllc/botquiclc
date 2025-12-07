@@ -1,0 +1,58 @@
+{
+  "tiktok": {
+    "username": "",
+    "check_interval": 1200,
+    "target_users": ["bigjolan", "pasdurrrr"],
+    "target_hashtags": []
+  },
+  "apify": {
+    "enabled": true,
+    "api_token": "apify_api_gH6p9WdILynOeQok2SpWUCBhsfnpkL38t6KA",
+    "actor_id": "GdWCkxBtKWOsKjdch",
+    "max_results": 10
+  },
+  "smmfollows": {
+    "api_key": "14bd12810da2a510a78c9433ce8ddac9",
+    "service_ids": {
+      "likes": 1321,
+      "comments": 1321,
+      "views": 1321
+    }
+  },
+  "services": {
+    "likes": {
+      "enabled": false,
+      "count": 10,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    },
+    "comments": {
+      "enabled": false,
+      "count": 5,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null,
+      "templates": [
+        "Super vidéo ! 🔥",
+        "J'adore ! ❤️",
+        "Trop bien ! 👏",
+        "Excellent contenu ! 💯"
+      ]
+    },
+    "views": {
+      "enabled": true,
+      "count": 99999,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    }
+  },
+  "database": {
+    "file": "videos_tracked.json"
+  }
+}
+
