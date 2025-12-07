@@ -28,8 +28,8 @@ wheels/
 bot.log
 
 # Configuration sensible
-config.json
-videos_tracked.json
+# config.json (maintenant sur GitHub)
+# videos_tracked.json
 
 # IDE
 .vscode/
