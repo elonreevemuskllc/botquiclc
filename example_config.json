@@ -1,0 +1,59 @@
+{
+  "tiktok": {
+    "username": "exemple_user",
+    "check_interval": 60,
+    "target_users": ["user1", "user2"],
+    "target_hashtags": ["trending", "viral"]
+  },
+  "apify": {
+    "enabled": true,
+    "api_token": "votre_token_apify_ici",
+    "actor_id": "GdWCkxBtKWOsKjdch",
+    "max_results": 10
+  },
+  "smmfollows": {
+    "api_key": "votre_cle_api_smmfollows_ici",
+    "service_ids": {
+      "likes": null,
+      "comments": null,
+      "views": null
+    }
+  },
+  "services": {
+    "likes": {
+      "enabled": true,
+      "count": 10,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    },
+    "comments": {
+      "enabled": true,
+      "count": 5,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null,
+      "templates": [
+        "Super vidéo ! 🔥",
+        "J'adore ! ❤️",
+        "Trop bien ! 👏",
+        "Excellent contenu ! 💯",
+        "Génial ! ⭐"
+      ]
+    },
+    "views": {
+      "enabled": false,
+      "count": 100,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    }
+  },
+  "database": {
+    "file": "videos_tracked.json"
+  }
+}
+
