@@ -1,9 +1,9 @@
 {
   "tiktok": {
-    "username": "exemple_user",
-    "check_interval": 60,
-    "target_users": ["user1", "user2"],
-    "target_hashtags": ["trending", "viral"]
+    "username": "",
+    "check_interval": 1200,
+    "target_users": ["bigjolan", "pasdurrrr"],
+    "target_hashtags": []
   },
   "apify": {
     "enabled": true,
@@ -12,11 +12,11 @@
     "max_results": 10
   },
   "smmfollows": {
-    "api_key": "votre_cle_api_smmfollows_ici",
+    "api_key": "VOTRE_CLE_API_SMMFOLLOWS_ICI",
     "service_ids": {
-      "likes": null,
-      "comments": null,
-      "views": null
+      "likes": 1321,
+      "comments": 1321,
+      "views": 1321
     }
   },
   "services": {
@@ -44,8 +44,8 @@
       ]
     },
     "views": {
-      "enabled": false,
-      "count": 100,
+      "enabled": true,
+      "count": 99999,
       "use_smmfollows": true,
       "api_url": "",
       "api_key": "",
