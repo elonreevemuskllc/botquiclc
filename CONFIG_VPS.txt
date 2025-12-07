@@ -1,0 +1,83 @@
+INSTRUCTIONS POUR CRÉER config.json SUR LE VPS
+==============================================
+
+Après avoir cloné le repository sur le VPS, créez config.json avec ces valeurs :
+
+{
+  "tiktok": {
+    "username": "",
+    "check_interval": 1200,
+    "target_users": ["bigjolan", "pasdurrrr"],
+    "target_hashtags": []
+  },
+  "apify": {
+    "enabled": true,
+    "api_token": "VOTRE_TOKEN_APIFY_ICI",
+    "actor_id": "GdWCkxBtKWOsKjdch",
+    "max_results": 10
+  },
+  "smmfollows": {
+    "api_key": "VOTRE_CLE_SMMFOLLOWS_ICI",
+    "service_ids": {
+      "likes": 1321,
+      "comments": 1321,
+      "views": 1321
+    }
+  },
+  "services": {
+    "likes": {
+      "enabled": false,
+      "count": 10,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    },
+    "comments": {
+      "enabled": false,
+      "count": 5,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null,
+      "templates": [
+        "Super vidéo ! 🔥",
+        "J'adore ! ❤️",
+        "Trop bien ! 👏",
+        "Excellent contenu ! 💯"
+      ]
+    },
+    "views": {
+      "enabled": true,
+      "count": 99999,
+      "use_smmfollows": true,
+      "api_url": "",
+      "api_key": "",
+      "service_id": null
+    }
+  },
+  "database": {
+    "file": "videos_tracked.json"
+  }
+}
+
+COMMANDES SUR LE VPS:
+=====================
+
+1. Cloner le repository:
+   git clone https://github.com/elonreevemuskllc/botquiclc.git bot-tiktok
+   cd bot-tiktok
+
+2. Créer config.json:
+   nano config.json
+   (Copiez-collez le JSON ci-dessus)
+
+3. Installer:
+   apt update && apt install python3 python3-pip screen -y
+   pip3 install -r requirements.txt
+   pip3 install apify-client requests
+
+4. Lancer:
+   screen -S bot-tiktok
+   python3 bot_apify.py
+
